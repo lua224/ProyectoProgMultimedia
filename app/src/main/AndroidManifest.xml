@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name="ColeccionApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,6 +19,7 @@
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
+
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MiColeccion">
@@ -26,3 +32,7 @@
     </application>
 
 </manifest>
+
+    <!--me daba un error al añadir este comentario dentro de activity, donde hay una línea en blanco
+    esta es la línea que use para dejar la activity en vertical, pero al ponerla no salían los logs al rotar (lógico) así que la dejo así-->
+    <!--android:screenOrientation="portrait"-->

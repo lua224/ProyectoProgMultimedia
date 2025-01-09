@@ -4,3 +4,5 @@ páginas que he encontrado me ha gustado lo suficiente como para continuar usán
 
 De momento tiene una lista con nombres de muñecas y una imagen genérica que acompaña 
 cada nombre. Hay un botón para marcar si esa muñeca forma parte de la colección o no.
+
+Se muestran logs cada vez que se hacen ciertas acciones, como rotar, minimizar, etc.
